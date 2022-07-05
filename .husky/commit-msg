@@ -1,0 +1,9 @@
+###
+ # @Date: 2022-04-02 14:34:25
+ # @LastEditors: gdc
+ # @LastEditTime: 2022-04-02 14:34:26
+### 
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+yarn commitlint --edit

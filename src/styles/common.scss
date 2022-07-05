@@ -1,0 +1,110 @@
+[flex] {
+  display: flex;
+}
+
+[flex-box='1'] {
+  flex: 1;
+}
+
+.items-center {
+  align-items: center;
+}
+
+[pointer] {
+  cursor: pointer;
+}
+
+$aligns: center, space-around, space-between;
+@each $align in $aligns {
+  .justify-content-#{$align} {
+    justify-content: #{$align};
+  }
+}
+
+$dirs: 0, 2, 4, 6, 8, 10, 12, 16, 20, 40, 60, 80, 100, 120;
+
+@each $dir in $dirs {
+  .p-#{$dir} {
+    padding: #{$dir}px;
+  }
+  .pl-#{$dir} {
+    padding-left: #{$dir}px;
+  }
+  .pr-#{$dir} {
+    padding-right: #{$dir}px;
+  }
+  .prl-#{$dir} {
+    padding-right: #{$dir}px;
+    padding-left: #{$dir}px;
+  }
+  .pt-#{$dir} {
+    padding-top: #{$dir}px;
+  }
+  .pb-#{$dir} {
+    padding-bottom: #{$dir}px;
+  }
+  .ptb-#{$dir} {
+    padding-top: #{$dir}px;
+    padding-bottom: #{$dir}px;
+  }
+  .m-#{$dir} {
+    margin: #{$dir}px;
+  }
+  .ml-#{$dir} {
+    margin-left: #{$dir}px;
+  }
+  .mr-#{$dir} {
+    margin-right: #{$dir}px;
+  }
+  .mrl-#{$dir} {
+    margin-right: #{$dir}px;
+    margin-left: #{$dir}px;
+  }
+  .mt-#{$dir} {
+    margin-top: #{$dir}px;
+  }
+  .mb-#{$dir} {
+    margin-bottom: #{$dir}px;
+  }
+  .mtb-#{$dir} {
+    margin-top: #{$dir}px;
+    margin-bottom: #{$dir}px;
+  }
+}
+
+$sizes: 12, 14, 16, 20, 24, 28, 30, 32;
+@each $size in $sizes {
+  .size-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+$colors: DAF2FF 333;
+@each $color in $colors {
+  .color-#{$color} {
+    color: #{'#'}#{$color};
+  }
+  .bg-#{$color} {
+    background-color: #{'#'}#{$color};
+  }
+}
+
+.scroll-y {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.scroll-x {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

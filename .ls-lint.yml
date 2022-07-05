@@ -1,0 +1,15 @@
+ls:
+  src/*:
+    .js: camelcase | kebab-case
+    .jsx: camelcase | kebab-case
+    .ts: camelcase | kebab-case
+    .tsx: camelcase | kebab-case
+    .vue: kebab-case | camelCase
+    .d.ts: kebab-case
+    .less: kebab-case
+
+ignore:
+  - node_modules
+  - dist
+  - .git
+  - .vscode

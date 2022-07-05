@@ -1,0 +1,11 @@
+# Ignore
+
+/dist/*
+.local
+package.json
+/node_modules/**
+
+**/*.svg
+**/*.sh
+
+/public/*

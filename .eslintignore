@@ -1,0 +1,12 @@
+node_modules
+*.node_modules
+# *.less
+*.woff
+*.ttf
+.vscodee
+.idea
+/dist/
+/public
+/docs
+postcss.config.js
+/node/*
